@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 Project-Awaken
+     Copyright (C) 2021 ArcaneOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -27,8 +27,8 @@
     <string name="attention">Attention</string>
     <string name="reset">Reset</string>
 
-    <!-- Awaken Settings -->
-    <string name="awaken_settings_title">Awaken Settings</string>
+    <!-- Arcane Settings -->
+    <string name="arcane_settings_title">Grimoire</string>
     <string name="statusbar_title">Statusbar</string>
     <string name="quicksettings_title">Quick Settings</string>
     <string name="button_settings_title">Buttons</string>

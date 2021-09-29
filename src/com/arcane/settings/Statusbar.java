@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 Project-Awaken
+ * Copyright (C) 2020 Project-arcane
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.awaken.settings;
+package com.arcane.settings;
 
 import android.app.Activity;
 import android.content.Context;
@@ -42,19 +42,19 @@ import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class QuickSettings extends SettingsPreferenceFragment {
+public class Statusbar extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.quick_settings);
+        addPreferencesFromResource(R.xml.statusbar);
         PreferenceScreen prefSet = getPreferenceScreen();
 
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AWAKEN;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -63,7 +63,7 @@ public class QuickSettings extends SettingsPreferenceFragment {
                 public List<SearchIndexableResource> getXmlResourcesToIndex(
                         Context context, boolean enabled) {
                     final SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.quick_settings;
+                    sir.xmlResId = R.xml.statusbar;
                     return Arrays.asList(sir);
                 }
 

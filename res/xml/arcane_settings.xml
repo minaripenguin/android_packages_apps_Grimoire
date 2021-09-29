@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 Project-Awaken
+     Copyright (C) 2021 ArcaneOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,38 +17,38 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/awaken_settings_title" >
+    android:title="@string/arcane_settings_title" >
 
         <!-- Statusbar -->
         <Preference
             android:id="@+id/statusbar"
             android:title="@string/statusbar_title"
-            android:fragment="com.awaken.settings.Statusbar"
-            android:layout="@layout/preference_awakensettings_statusbar"
+            android:fragment="com.arcane.settings.Statusbar"
+            android:layout="@layout/preference_arcanesettings_statusbar"
             />
 
         <!-- Quick Settings -->
         <Preference
             android:id="@+id/quick_settings"
             android:title="@string/quicksettings_title"
-            android:fragment="com.awaken.settings.QuickSettings"
-            android:layout="@layout/preference_awakensettings_quicksettings"
+            android:fragment="com.arcane.settings.QuickSettings"
+            android:layout="@layout/preference_arcanesettings_quicksettings"
             />
 
         <!-- Buttons -->
         <Preference
             android:key="button_settings"
             android:title="@string/button_settings_title"
-            android:fragment="com.awaken.settings.ButtonSettings"
-	    android:layout="@layout/preference_awakensettings_buttons"
+            android:fragment="com.arcane.settings.ButtonSettings"
+	    android:layout="@layout/preference_arcanesettings_buttons"
 	    />
 
         <!-- Lockscreen -->
         <Preference
             android:key="lockscreen_settings"
             android:title="@string/lockscreen_settings_title"
-            android:fragment="com.awaken.settings.Lockscreen"
-	    android:layout="@layout/preference_awakensettings_lockscreen"
+            android:fragment="com.arcane.settings.Lockscreen"
+	    android:layout="@layout/preference_arcanesettings_lockscreen"
 	    />
 
 </PreferenceScreen>
